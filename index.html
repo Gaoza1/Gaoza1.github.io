@@ -120,8 +120,22 @@
           <ul class="project-points">
             <li>有界 Agent 工作流，支持工具重试、停止条件与 Human-in-the-loop。</li>
             <li>FastAPI + SQLite + FFmpeg，支持 SRT / MP4 / Trace 产物下载。</li>
-            <li>离线确定性演示与可配置模型模式，10 项测试覆盖关键流程。</li>
+            <li>16 项测试与 12 任务故障注入基准覆盖恢复、改稿与终止路径。</li>
           </ul>
+          <dl class="project-metrics" aria-label="VideoLocalize Agent 实测指标">
+            <div>
+              <dt>8 / 12</dt>
+              <dd>任务完成<br>4 个为故意终止</dd>
+            </div>
+            <div>
+              <dt>25.0%</dt>
+              <dd>人工返工率<br>2 / 8 个完成任务</dd>
+            </div>
+            <div>
+              <dt>39.81 ms</dt>
+              <dd>瞬时故障<br>平均恢复时间</dd>
+            </div>
+          </dl>
           <div class="project-links">
             <a href="https://github.com/Gaoza1/video-localize-agent" target="_blank" rel="noreferrer">查看源代码 <span aria-hidden="true">↗</span></a>
             <a href="https://github.com/Gaoza1/video-localize-agent/blob/main/docs/architecture.md" target="_blank" rel="noreferrer">架构说明 <span aria-hidden="true">↗</span></a>

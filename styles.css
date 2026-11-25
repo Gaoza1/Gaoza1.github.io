@@ -442,6 +442,41 @@ img {
   background: var(--orange);
 }
 
+.project-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  margin: 32px 0 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.project-metrics div {
+  padding: 17px 16px 17px 0;
+  border-right: 1px solid var(--line);
+}
+
+.project-metrics div:not(:first-child) {
+  padding-left: 16px;
+}
+
+.project-metrics div:last-child {
+  border-right: 0;
+}
+
+.project-metrics dt {
+  margin-bottom: 6px;
+  font: 700 22px/1 var(--display);
+  letter-spacing: -0.04em;
+}
+
+.project-metrics dd {
+  margin: 0;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.55;
+}
+
 .project-links {
   display: flex;
   flex-wrap: wrap;
@@ -819,6 +854,21 @@ img {
 
   .project h3 {
     font-size: 42px;
+  }
+
+  .project-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .project-metrics div,
+  .project-metrics div:not(:first-child) {
+    padding: 14px 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .project-metrics div:last-child {
+    border-bottom: 0;
   }
 
   .project-visual-window {
